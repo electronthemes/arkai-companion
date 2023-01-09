@@ -51,7 +51,7 @@ class arkai_author_bio extends WP_Widget
 			
 			?>
 			<div class="author-bio text-center">
-				<a href="<?php echo get_author_posts_url($user->ID); ?>" class="authorimg">
+				<a href="<?php echo get_author_posts_url($user->ID); ?>" class="authorimg" aria-label="avatar">
 					<?php echo get_avatar($user->ID, 260); ?>
 				</a>
 				<h4>
@@ -67,7 +67,7 @@ class arkai_author_bio extends WP_Widget
 					<ul class="social-icon">
 						<?php if($facebook) : ?>
 						<li>
-							<a href="<?php echo esc_url($facebook); ?>" target="_blank">
+							<a href="<?php echo esc_url($facebook); ?>" target="_blank" aria-label="facebook">
 								<i class="fa-brands fa-facebook-f"></i>
 							</a>
 						</li>
@@ -76,7 +76,7 @@ class arkai_author_bio extends WP_Widget
 							if($twitter) :
 						?>
 						<li>
-							<a href="<?php echo esc_url($twitter); ?>" target="_blank">
+							<a href="<?php echo esc_url($twitter); ?>" target="_blank" aria-label="twitter">
 								<i class="fa-brands fa-twitter"></i>
 							</a>
 						</li>
@@ -85,7 +85,7 @@ class arkai_author_bio extends WP_Widget
 							if($linkedin) :
 						?>
 						<li>
-							<a href="<?php echo esc_url($linkedin); ?>" target="_blank">
+							<a href="<?php echo esc_url($linkedin); ?>" target="_blank" aria-label="linkedin">
 								<i class="fa-brands fa-linkedin-in"></i>
 							</a>
 						</li>
@@ -94,7 +94,7 @@ class arkai_author_bio extends WP_Widget
 							if($git) :
 						?>
 						<li>
-							<a href="<?php echo esc_url($git); ?>" target="_blank">
+							<a href="<?php echo esc_url($git); ?>" target="_blank" aria-label="github">
 								<i class="fa-brands fa-github"></i>
 							</a>
 						</li>
@@ -103,7 +103,7 @@ class arkai_author_bio extends WP_Widget
 							if($user_url) :
 						?>
 						<li>
-							<a href="<?php echo esc_url($user_url); ?>" target="_blank">
+							<a href="<?php echo esc_url($user_url); ?>" target="_blank" aria-label="website">
 								<i class="fa-solid fa-globe"></i>
 							</a>
 						</li>

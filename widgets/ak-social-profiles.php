@@ -39,62 +39,110 @@ class arkai_social_profiles extends WP_Widget
 			?>
 				<ul class="social-icon">
 					<?php if( $facebook_url ) : ?>
-	                	<li><a target="_blank" href="<?php echo esc_url( $facebook_url ); ?>"><i class="fa-brands fa-facebook-f"></i></a></li>
+	                	<li>
+							<a target="_blank" href="<?php echo esc_url( $facebook_url ); ?>" aria-label="Facebook">
+								<i class="fa-brands fa-facebook-f"></i>
+							</a>
+						</li>
 	                <?php
 	                	endif;
 	                	if( $twitter_url ) :
 	                ?>
-	                	<li><a target="_blank" href="<?php echo esc_url( $twitter_url ); ?>"><i class="fa-brands fa-twitter"></i></a></li>
+	                	<li>
+							<a target="_blank" href="<?php echo esc_url( $twitter_url ); ?>" aria-label="Twitter">
+								<i class="fa-brands fa-twitter"></i>
+							</a>
+						</li>
                 	<?php
                 		endif;
                 		if( $linkedin_url ) :
                 	?>
-	                	<li><a target="_blank" href="<?php echo esc_url( $linkedin_url ); ?>"><i class="fa-brands fa-linkedin-in"></i></a></li>
+	                	<li>
+							<a target="_blank" href="<?php echo esc_url( $linkedin_url ); ?>" aria-label="Linkedin">
+								<i class="fa-brands fa-linkedin-in"></i>
+							</a>
+						</li>
                 	<?php
                 		endif;
                 		if( $pinterest_url ) :
                 	?>
-	                	<li><a target="_blank" href="<?php echo esc_url( $pinterest_url ); ?>"><i class="fa-brands fa-pinterest-p"></i></a></li>
+	                	<li>
+							<a target="_blank" href="<?php echo esc_url( $pinterest_url ); ?>" aria-label="Pinterest">
+								<i class="fa-brands fa-pinterest-p"></i>
+							</a>
+						</li>
                 	<?php
                 		endif;
                 		if( $google_url ) :
                 	?>
-	                	<li><a target="_blank" href="<?php echo esc_url( $google_url ); ?>"><i class="fa-brands fa-google-plus-g"></i></a></li>
+	                	<li>
+							<a target="_blank" href="<?php echo esc_url( $google_url ); ?>" aria-label="Google Plus">
+								<i class="fa-brands fa-google-plus-g"></i>
+							</a>
+						</li>
                 	<?php
                 		endif;
                 		if( $github_url ) :
                 	?>
-	                	<li><a target="_blank" href="<?php echo esc_url( $github_url ); ?>"><i class="fa-brands fa-github"></i></a></li>
+	                	<li>
+							<a target="_blank" href="<?php echo esc_url( $github_url ); ?>" aria-label="Github">
+								<i class="fa-brands fa-github"></i>
+							</a>
+						</li>
                 	<?php
                 		endif;
                 		if( $youtube_url ) :
                 	?>
-	                	<li><a target="_blank" href="<?php echo esc_url( $youtube_url ); ?>"><i class="fa-brands fa-youtube"></i></a></li>
+	                	<li>
+							<a target="_blank" href="<?php echo esc_url( $youtube_url ); ?>" aria-label="Youtube">
+								<i class="fa-brands fa-youtube"></i>
+							</a>
+						</li>
                 	<?php
                 		endif;
                 		if( $instagram_url ) :
                 	?>
-	                	<li><a target="_blank" href="<?php echo esc_url( $instagram_url ); ?>"><i class="fa-brands fa-instagram"></i></a></li>
+	                	<li>
+							<a target="_blank" href="<?php echo esc_url( $instagram_url ); ?>" aria-label="Instragram">
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+						</li>
                 	<?php
                 		endif;
                 		if( $feed_url ) :
                 	?>
-	                	<li><a target="_blank" href="<?php echo esc_url( $feed_url ); ?>"><i class="fa fa-feed"></i></a></li>
+	                	<li>
+							<a target="_blank" href="<?php echo esc_url( $feed_url ); ?>" aria-label="Feed">
+								<i class="fa fa-feed"></i>
+							</a>
+						</li>
                 	<?php
                 		endif;
                 		if( $dribbble_url ) :
                 	?>
-	                	<li><a target="_blank" href="<?php echo esc_url( $dribbble_url ); ?>"><i class="fa-brands fa-dribbble"></i></a></li>
+	                	<li>
+							<a target="_blank" href="<?php echo esc_url( $dribbble_url ); ?>" aria-label="Dribbble">
+								<i class="fa-brands fa-dribbble"></i>
+							</a>
+						</li>
                 	<?php
                 		endif;
                 		if( $skype_url ) :
                 	?>
-	                	<li><a target="_blank" href="<?php echo esc_url( $skype_url ); ?>"><i class="fa-brands fa-skype"></i></a></li>
+	                	<li>
+							<a target="_blank" href="<?php echo esc_url( $skype_url ); ?>" aria-label="Skype">
+								<i class="fa-brands fa-skype"></i>
+							</a>
+						</li>
                 	<?php
                 		endif;
                 		if( $whatsapp_url ) :
                 	?>
-	                	<li><a target="_blank" href="<?php echo esc_url( $whatsapp_url ); ?>"><i class="fa-brands fa-whatsapp"></i></a></li>
+	                	<li>
+							<a target="_blank" href="<?php echo esc_url( $whatsapp_url ); ?>" aria-label="WhatsApp">
+								<i class="fa-brands fa-whatsapp"></i>
+							</a>
+						</li>
                 	<?php endif; ?>
 	            </ul>
 	        <?php endif; ?>

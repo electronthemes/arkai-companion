@@ -34,7 +34,7 @@ class arkai_recent_posts extends WP_Widget
 				<?php while( $recent_posts -> have_posts() ) : $recent_posts -> the_post(); ?>
 				<div class="erecent-post-item <?php if(has_post_thumbnail()){ echo 'has_recent_thumb'; } ?>">
 					<div class="erecent-img">
-						<a href="<?php the_permalink(); ?>">
+						<a href="<?php the_permalink(); ?>" aria-label="thumbnail">
 							<?php the_post_thumbnail('extra-small'); ?>
 						</a>
 					</div>
